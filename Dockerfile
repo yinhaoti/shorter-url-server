@@ -1,3 +1,4 @@
+# Ubuntu 16.04
 # 配置基础容器 python-dev-base
 FROM python:3.5
 MAINTAINER yinhaotian hautienyin@qq.com
@@ -10,7 +11,7 @@ echo "deb-src http://mirrors.163.com/debian/ jessie main non-free contrib" >>/et
 echo "deb-src http://mirrors.163.com/debian/ jessie-proposed-updates main non-free contrib" >>/etc/apt/sources.list
 
 # 安装自定义package
-RUN apt-get update -y && apt-get install -y nano git curl \
+RUN apt-get update -y && apt-get install -y nano git curl
     # vim
 
 # initDocker 是文件 initDocker/ 是文件夹
