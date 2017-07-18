@@ -24,7 +24,7 @@ CMD "echo" "shorter-url-server docker build sucess!"
 
 # docker build -t yinhaoti/shorter-url-server .
 # 即删即用
-# docker run --rm -it -v $(pwd):/yinhaotian/wtf_chat_robot/ --name chatbot yinhaoti/chatbot /bin/bash
+# docker run --rm -it  -p 80:1888 -v $(pwd):/yinhaotian/shorter-url-server/ --name shorturl yinhaoti/shorter-url-server /bin/bash
 # 自动重启/后台运行
 # docker run -d --restart=always -v $(pwd):/yinhaotian/wtf_chat_robot/ --name chatbot yinhaoti/chatbot /bin/bash -c 'python3 -u ./WSGI_Debian_wechat.py'
 # 查看输出日志

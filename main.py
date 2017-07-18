@@ -9,7 +9,7 @@ import urllib
 
 app = Flask(__name__)
 salt = 'this is haotian'
-shortURL = SuperMongoDB(host='192.168.1.99',
+shortURL = SuperMongoDB(host='uiu.pub',
                  port=27017)
 db = shortURL.connectDB(databaseName='shortURL')
 # # 建立索引
